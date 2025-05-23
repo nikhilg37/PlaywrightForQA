@@ -5,7 +5,7 @@ import {test, expect} from '@playwright/test'
 test('First playwright type script', async({page})=>{
     //Go to URL
     await page.goto('https://www.facebook.com/');
-    await page.getByRole('button', { name: 'Decline optional cookies' }).click();
+    //await page.getByRole('button', { name: 'Decline optional cookies' }).click();
 
     //Enter invalid login credentials
     await page.getByTestId('royal-email').fill('test@test.com');
